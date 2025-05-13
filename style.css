@@ -23,7 +23,7 @@ header {
 .Header-icon {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 nav {
@@ -73,33 +73,84 @@ nav ul.open {
     display: flex;
 }
 
-@media (max-width: 760px) {
-    .hamburger{
-        display: flex;
-    }
+@media (max-width: 320px) {
+  .hamburger{
+    display: flex;
+}
 
-    .list {
-        flex-direction: column;
-        display: none;
-        position: absolute;
-        top: 90px;
-        right: 70px;
-        background-color: rgb(114, 62, 62);
-        width: 200px;
-        padding-left: 20px;
-        border-radius: 10px;
-    }
+.list {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 1px;
+    background-color: rgb(148, 197, 227);
+    width: 200px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
 
-    nav ul li:not(:last-child) {
-      margin-bottom: 20px;
+nav ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .hamburger{
+    display: flex;
+}
+
+.list {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 70px;
+    background-color: rgb(148, 197, 227);
+    width: 200px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+nav ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+}
+
+@media (max-width: 1024px) {
+  .hamburger{
+      display: flex;
   }
+
+  .list {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      top: 90px;
+      right: 1px;
+      background-color: rgb(148, 197, 227);
+      width: 200px;
+      padding-left: 20px;
+      border-radius: 10px;
+  }
+
+  nav ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+}
+@media (max-width: 1920px) {
+
 }
 
 
 
 
 
+
+
 .btn {
+ 
   width: 250px;
   height: 100px;
   background-color: rgb(6, 129, 252);
@@ -109,6 +160,10 @@ nav ul.open {
   font-size: 36px;
   cursor: pointer;
   transition: 0.3s;
+
+  position: relative;
+  top: 600px;
+  right: 50%;
 }
 
 .btn:hover,
@@ -119,8 +174,8 @@ nav ul.open {
 
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+ align-items: center;  */
   background-image: url(mountain-bg.png) ;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,4 +321,44 @@ a {
   top: 55px;
   right: -400px;
 }
+
+.main-container{
+  margin: 60px 0 0 60px;
+
+
+  width: 1600px;
+  height: 800px;
+  display: flex;
+
+
+}
+.main_tema{
+  font-size: 56px;
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+.main_text{
+  font-size: 30px;
+  font-style: normal;
   
+  position: relative;
+  top: 80px;
+  left: 100px;
+}
+
+.Konec{
+  height: 60px;
+  background-color: rgb(41 96 126);
+  text-align: center;
+}
+.Konec-text{
+  position: relative;
+  top: 30%;
+
+  font-size: 30px;
+  color: white;
+}

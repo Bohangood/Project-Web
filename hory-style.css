@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* body{
+    display: flex;
+    flex-direction: column;
+    
+  } */
+  header {
+    display: flex;
+    /* width: 100%; */
+  
+    align-items: center;
+    background-color: rgb(148, 197, 227);
+    color: white;
+    padding: 25px;
+    position: sticky;
+  
+  }
+  
+  .Header-icon {
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+  }
+  
+  nav {
+    margin-left: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  
+  nav ul li a {
+      color: white;
+      font-size: 36px;
+      text-decoration: none;
+      
+  }
+  
+  nav ul li:not(:last-child) {
+      margin-right: 20px;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus {
+      color: rgb(255, 89, 6)
+  }
+  
+  .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      margin-left: auto;
+  }
+  
+  .hamburger span {
+      display: block;
+      width: 35px;
+      height: 5px;
+      background-color: white;
+  }
+  
+  .hamburger span:not(:last-child){
+      margin-bottom: 7px;
+  }
+  nav ul.open {
+      display: flex;
+  }
+  
+  @media (max-width: 320px) {
+    .hamburger{
+      display: flex;
+  }
+  
+  .list {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      top: 90px;
+      right: 1px;
+      background-color: rgb(148, 197, 227);
+      width: 200px;
+      padding-left: 20px;
+      border-radius: 10px;
+  }
+  
+  nav ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger{
+      display: flex;
+  }
+  
+  .list {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      top: 90px;
+      right: 70px;
+      background-color: rgb(148, 197, 227);
+      width: 200px;
+      padding-left: 20px;
+      border-radius: 10px;
+  }
+  
+  nav ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  }
+  
+  @media (max-width: 1024px) {
+    .hamburger{
+        display: flex;
+    }
+  
+    .list {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 90px;
+        right: 1px;
+        background-color: rgb(148, 197, 227);
+        width: 200px;
+        padding-left: 20px;
+        border-radius: 10px;
+    }
+  
+    nav ul li:not(:last-child) {
+      margin-bottom: 20px;
+  }
+  }
+  @media (max-width: 1920px) {
+      
+}
+.main-hory {
+  display: flex;
+  
+
+  background-image: url(mountain-bg.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 100px); /* Чтобы не перекрывало header */
+}
+
+  footer{
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+      /* width: 100%; */
+      background-color: rgb(148, 197, 227);
+    }
+    
+    .odkazy{
+      list-style-type: none;
+      font-size: 30px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    
+    .Konec{
+      height: 60px;
+      background-color: rgb(41 96 126);
+      text-align: center;
+    }
+    .Konec-text{
+      position: relative;
+      top: 30%;
+    
+      font-size: 30px;
+      color: white;
+    }
+   
+.Hory{
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.Hora1{
+
+    width: 350px;
+    
+    overflow: hidden;
+}
+.Hora-img{
+    padding: 0 30px 0 30px;
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+}
+
+.Hora-content{
+    text-align: center;
+    padding: 30px;
+}
+
