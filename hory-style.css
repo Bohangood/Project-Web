@@ -73,76 +73,8 @@
       display: flex;
   }
   
-  @media (max-width: 320px) {
-    .hamburger{
-      display: flex;
-  }
   
-  .list {
-      flex-direction: column;
-      display: none;
-      position: absolute;
-      top: 90px;
-      right: 1px;
-      background-color: rgb(148, 197, 227);
-      width: 200px;
-      padding-left: 20px;
-      border-radius: 10px;
-  }
-  
-  nav ul li:not(:last-child) {
-    margin-bottom: 20px;
-  }
-  
-  }
-  
-  @media (max-width: 768px) {
-    .hamburger{
-      display: flex;
-  }
-  
-  .list {
-      flex-direction: column;
-      display: none;
-      position: absolute;
-      top: 90px;
-      right: 70px;
-      background-color: rgb(148, 197, 227);
-      width: 200px;
-      padding-left: 20px;
-      border-radius: 10px;
-  }
-  
-  nav ul li:not(:last-child) {
-    margin-bottom: 20px;
-  }
-  }
-  
-  @media (max-width: 1024px) {
-    .hamburger{
-        display: flex;
-    }
-  
-    .list {
-        flex-direction: column;
-        display: none;
-        position: absolute;
-        top: 90px;
-        right: 1px;
-        background-color: rgb(148, 197, 227);
-        width: 200px;
-        padding-left: 20px;
-        border-radius: 10px;
-    }
-  
-    nav ul li:not(:last-child) {
-      margin-bottom: 20px;
-  }
-  }
-  @media (max-width: 1920px) {
-      
-}
-.main-hory {
+main {
   display: flex;
 
 
@@ -193,20 +125,198 @@
 }
 .Hora1{
 
-    width: 350px;
+    width: 300px;
     
-    overflow: hidden;
+    overflow:visible;
 }
 .Hora-img{
-    padding: 0 30px 0 30px;
+    /* padding: 0 30px 0 30px; */
     width: 300px;
     height: 300px;
 
     border-radius: 50%;
 }
+.Hora-img:focus,
+.Hora-img:hover{
+  animation-name: zoom;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
 
-.Hora-content{
-    text-align: center;
-    padding: 30px;
+  animation-fill-mode: forwards;
 }
 
+@keyframes zoom {
+  0%{
+
+  }
+  100%{
+    scale: 1.1;
+  }
+}
+
+.Hora-content{
+  text-align: center;
+  padding: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburger{
+      display: flex;
+  }
+
+  .list {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      top: 90px;
+      right: 1px;
+      background-color: rgb(148, 197, 227);
+      width: 200px;
+      padding-left: 20px;
+      border-radius: 10px;
+  }
+
+  nav ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.Hora1{
+    width: 200px;
+}
+ .Hora-img{
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+}
+.Hora-content{
+  text-align: center;
+  padding: 1px;
+} 
+}
+
+
+
+
+ @media (max-width: 768px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+
+nav ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.Hora1{
+    width: 150px;
+}
+
+ .Hora-img{
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+}
+.Hora-content{
+  text-align: center;
+  padding: 1px;
+} 
+
+} 
+
+
+@media (max-width: 320px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .Header-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hamburger {
+    display: flex;
+   position: relative;
+   bottom: 30px;
+  }
+
+  .list {
+      flex-direction: column;
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 1px;
+      background-color: rgb(148, 197, 227);
+      width: 200px;
+      padding-left: 20px;
+      border-radius: 10px;
+  }
+
+
+  nav ul li a {
+    font-size: 20px;
+  }
+    nav ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+  main {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .Hory {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .Hora1 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .Hora-img {
+    width: 200px;
+    height: 200px;
+
+    position: relative;
+    left: 20px;
+  }
+
+  .hora-tema {
+    font-size: 20px;
+  }
+
+  .hora-odstavec {
+    font-size: 14px;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .odkazy {
+    font-size: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .Konec-text {
+    font-size: 16px;
+    top: 50%;
+  }
+}
