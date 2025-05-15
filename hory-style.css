@@ -75,7 +75,7 @@ main {
   background-image: url(mountain-bg.png) ;
   background-repeat: no-repeat;
   background-size: cover;
-  height: calc(100vh - 100px); /* Чтобы не перекрывало header */
+  height: calc(100vh - 100px); 
 }
 
   footer{
